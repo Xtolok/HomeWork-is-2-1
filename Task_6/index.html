@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="main.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <h1 class="title">Расчет процентов оценок</h1>
+        <div class="form form" id="form">
+            <label for="work-1">Цена кладка плитки:</label>
+            <input type="text" class="work" id="work-1">
+            <br><br>
+            <label for="work-1cost">Количество:</label>
+            <input type="text" class="cost" id="cost-1">
+            <br><br>
+            <label for="work-2">Цена штукатурка стен:</label>
+            <input type="text" class="work" id="work-2">
+            <br><br>
+            <label for="work-2cost">Количество:</label>
+            <input type="text" class="cost" id="cost-2">
+            <br><br>
+            <label for="work-3">Цена установка сантехники:</label>
+            <input type="text" class="work" id="work-3">
+            <br><br>
+            <label for="work-3cost">Количество:</label>
+            <input type="text" class="cost" id="cost-3">
+            <br><br>
+            <label for="work-4">Цена установка натяжных потолков:</label>
+            <input type="text" class="work" id="work-4">
+            <br><br>
+            <label for="work-4cost">Количество:</label>
+            <input type="text" class="cost" id="cost-4">
+            <br><br>
+            <button onclick="calculate()" id="saveBtn">Рассчитать</button>
+        </div>
+        <div id="result"></div>
+    </div>
+</body>
+</html>
