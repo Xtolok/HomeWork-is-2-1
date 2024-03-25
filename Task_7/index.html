@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <script defer src="app.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2 class="title">Добавить - встречу</h2>
+        <div class="task-form">
+            <input onchange="checkInput()" type="text" class="task-input" id="meeting-name" placeholder="Название встречи">
+            <input onchange="checkInput()" type="text" class="task-input" id="meeting-place" placeholder="Название места">
+            <input onchange="checkInput()" type="datetime-local" id="meeting-time">
+            <input onchange="checkInput()" type="text" class="task-input" id="meeting-description" placeholder="Описание">
+            <input onchange="checkInput()" type="text" class="task-input" id="meeting-participants" placeholder="Участники">
+            <button onclick="addTask()" class="task-button" id="taskBtn" disabled>Добавить</button>
+        </div>
+        <ul class="task-list" id="meeting-name1"></ul>
+        <ul class="task-list" id="meeting-place1"></ul>
+        <ul class="task-list" id="meeting-time1"></ul>
+        <ul class="task-list" id="meeting-description1"></ul>
+        <ul class="task-list" id="meeting-participants1"></ul>
+    </div>
+</body>
+</html>
